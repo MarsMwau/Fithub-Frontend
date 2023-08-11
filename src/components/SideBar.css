@@ -1,0 +1,66 @@
+.container{
+    display:flex;
+}
+main{
+    width: 100%;
+    padding: 20px;
+}
+.sidebar{
+    background: #000;
+    color: #EC550E;
+    height: auto;
+    width: 300px;
+    transition: all 0.5s;
+}
+.top_section{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size: 36px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-family: "Cabin Sketch";
+}
+.logo{
+    font-size: 32px;
+}
+.logo img {
+    margin-right: 10px;
+  }
+.bars{
+    display: flex;
+    font-size: 27px;
+    margin-left: 50px;
+}
+/* menu */
+.menu {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+  .menuItem {
+     display: flex;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    gap: 15px;
+    transition: all 0.5s;
+    text-decoration: none;
+    font-size: 22px;
+    border-radius: 5px;
+    height: 40px;
+  }
+  .menuItem:hover {
+    cursor: pointer;
+    background-color: #008080;
+  }
+  .active {
+    background: #CA4000;
+    margin-left: 0;
+  }
+  .active::before {
+    content: "";
+    width: 8px;
+    height: 100%;
+  }

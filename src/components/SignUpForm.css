@@ -1,0 +1,66 @@
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 150vw;
+    background-image: url('https://images.pexels.com/photos/4753885/pexels-photo-4753885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .signup__title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+  .signup__input-wrapper {
+    margin-bottom: 16px;
+  }
+  .signup__input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .signup__error {
+    font-size: 0.8rem;
+    color: red;
+    margin-top: 0.2rem;
+    display: block;
+  }
+  .signup__input-wrapper-double {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+  }
+  .signup__input-wrapper-double .signup__input--small {
+    width: 90%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  .signup__button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #CF6C29;
+    color: #FFFFFF;
+    border-radius: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    cursor: pointer;
+  }
+  .signup__button:hover {
+    background-color: #B34B0F;
+  }
+  .signup__login-link {
+    font-size: 20px;
+  }
+  .signup__login-link-text {
+    color: #5DACF1;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
