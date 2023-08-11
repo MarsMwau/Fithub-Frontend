@@ -1,0 +1,35 @@
+/* Container for the stat cards */
+.my-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Use auto-fit to fill the available space */
+    grid-gap: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    height: auto;
+    padding: 6px;
+    width: 900px;
+    margin-bottom: 30px;
+  }
+  /* Individual stat card styles */
+  .stat-card {
+    margin: 5px; /* Adjust the margin between the cards */
+    border-radius: 25px !important; /* Add !important to override any conflicting styles */
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Stat title styles */
+  .stat-card .MuiCardHeader-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #024122;
+    margin-bottom: 1px; /* Adjust the margin between the title and the value */
+  }
+  /* Stat value styles */
+  .stat-card .stat-value {
+    font-size: 24px; /* Decrease the value font size slightly */
+    font-weight: bold;
+    color: #111111; /* You can change the value color to your preference */
+  }
