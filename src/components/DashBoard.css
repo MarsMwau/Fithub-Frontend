@@ -1,0 +1,39 @@
+.dashboard-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #F0F0F0; /* Adjust the background color as needed */
+  }
+  .main-content {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px; /* Adjust the max-width as needed */
+  }
+  .dashboard-columns {
+    display: flex;
+    gap: 20px; /* Adjust the gap between columns as needed */
+  }
+  .dashboard-left {
+    flex: 2; /* Make the left column twice as big as the right column */
+    min-width: 300px; /* Adjust the min-width of the left column as needed */
+    border: 1px solid #ccc; /* Add borders to separate columns visually */
+    padding: 20px;
+    background-color: #F9F9F9; /* Adjust the background color of the left column as needed */
+  }
+  .dashboard-right {
+    flex: 1; /* Make the right column one-third the size of the left column */
+    min-width: 200px; /* Adjust the min-width of the right column as needed */
+    border: 1px solid #ccc; /* Add borders to separate columns visually */
+    padding: 20px;
+    background-color: #FFFFFF; /* Adjust the background color of the right column as needed */
+  }
+  .icons,
+  .fitness-goal {
+    width: 100%; /* Make the components inside the left column occupy the full width */
+  }
+  .weight-trackings,
+  .calorie-intake-chart {
+    width: 100%; /* Make the components inside the right column occupy the full width */
+    margin-top: 20px; /* Add space between components as needed */
+  }
