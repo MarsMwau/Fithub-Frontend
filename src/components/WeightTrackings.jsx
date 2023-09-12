@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Chart } from 'chart.js/auto';
+import 'chart.js';
+import 'chart.js/auto';
 import moment from 'moment';
 import './WeightTrackings.css';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
