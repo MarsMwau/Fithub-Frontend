@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import 'chart.js';
+import { Chart } from 'chart.js';
 import 'chart.js/auto';
 import moment from 'moment';
 import './WeightTrackings.css';
