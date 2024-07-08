@@ -1,6 +1,7 @@
-import "./LandingPage.css";
+import "./Landingpage.css";
 import { Link } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+
 const LandingPage = () => {
   const [text, setText] = useState("");
   const [index, setIndex] = useState(0);

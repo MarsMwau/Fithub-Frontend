@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import './WeightChanges.css';
+
 const WeightChanges = () => {
   const [user, setUser] = useState(null);
   const [currentWeight, setCurrentWeight] = useState('');

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Exercises.css";
+
 const Exercises = () => {
   const [exercises, setExercises] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');

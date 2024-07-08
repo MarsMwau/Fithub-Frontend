@@ -1,9 +1,10 @@
 import React from 'react';
-import Icons from './Icons';
-import WeightTrackings from './WeightTrackings';
-import CalorieIntakeChart from './CalorieIntakeChart';
-import FitnessGoal from './FitnessGoal';
+import Icons from '../Icons/Icons';
+import WeightTrackings from '../WeightTrackings/WeightTrackings';
+import CalorieIntakeChart from '../../CalorieCount/CalorieIntakeChart/CalorieIntakeChart';
+import FitnessGoal from '../FitnessGoal/FitnessGoal';
 import './DashBoard.css';
+
 const DashBoard = () => {
   return (
     <div className="dashboard-container">

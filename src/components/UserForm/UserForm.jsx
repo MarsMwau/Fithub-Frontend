@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./UserForm.css";
+
 const UserForm = ({ user, onUpdate, onCancel }) => {
   const [updatedUser, setUpdatedUser] = useState({
     age: user.age,

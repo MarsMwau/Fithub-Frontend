@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './CalorieIntakeTable.css';
+
 const CalorieIntakeTable = () => {
     const [calorieIntakes, setCalorieIntakes] = useState([]);
     const fetchCalorieIntakes = async () => {

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import './MyProfile.css';
 import { FaEnvelope, FaUserAlt, FaRuler, FaWeight, FaGenderless, FaBirthdayCake } from 'react-icons/fa';
-import WeightTrackings from './WeightTrackings'
-import CalorieIntakeChart from './CalorieIntakeChart';
-import CalorieIntakeTable from './CalorieIntakeTable';
+import WeightTrackings from '../Home/WeightTrackings/WeightTrackings'
+import CalorieIntakeChart from '../CalorieCount/CalorieIntakeChart/CalorieIntakeChart';
+import CalorieIntakeTable from '../CalorieCount/CalorieIntakeTable/CalorieIntakeTable';
+
 const MyProfile = () => {
   const [user, setUser] = useState(null);
   useEffect(() => {

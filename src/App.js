@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SideBar from './components/SideBar';
-import CaloriesForm from './components/CaloriesForm';
-import LandingPage from './components/LandingPage';
-import MyProfile from './components/MyProfile';
-import Exercises from './components/Exercises';
-import Logout from './components/Logout';
-import Login from './components/Login';
-import DashBoard from './components/DashBoard';
+import SideBar from './components/navigation/SideBar/SideBar';
+import CaloriesForm from './components/Pages/CalorieCount/CaloriesForm/CaloriesForm';
+import LandingPage from './components/Pages/Landingpage/LandingPage';
+import MyProfile from './components/Pages/MyProfile/MyProfile';
+import Exercises from './components/Pages/Exercises/Exercises';
+import Logout from './components/auth/Logout';
+import Login from './components/auth/Login/Login';
+import DashBoard from './components/Pages/Home/DashBoard/DashBoard';
 import './App.css';
-import WeightChanges from './components/WeightChanges';
-import SignUp from './components/SignUpForm';
-import WorkoutPlan from './components/WorkoutPlan';
+import WeightChanges from './components/Pages/Weight/WeightChanges/WeightChanges';
+import SignUp from './components/auth/SignUpForm/SignUpForm';
+import WorkoutPlan from './components/Pages/Workout/WorkoutPlan/WorkoutPlan';
 
 const ProtectedRoute = ({ children }) => {
   const excludedRoutes = [
@@ -40,7 +40,6 @@ const App = () => {
   return (
     <Router>
       <div className="app-container">
-        {/* Wrap all the routes in the ProtectedRoute component */}
         <ProtectedRoute>
           <Route path="/" element={<LandingPage />} />
           <Route path="/home" element={<LandingPage />} />

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import CalorieIntakeTable from './CalorieIntakeTable'
+import CalorieIntakeTable from '../CalorieIntakeTable/CalorieIntakeTable'
 import './CaloriesForm.css'
 const CaloriesForm = () => {
   const [query, setQuery] = useState('');

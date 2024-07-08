@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {  faFire, faChartLine, faDumbbell, faClock } from '@fortawesome/free-solid-svg-icons';
-import { Card, CardContent, CardHeader } from '@material-ui/core';
-import './MyProfile.css';
+import { Card, CardContent, CardHeader } from '@mui/material';
 import './Icons.css';
+
 const Icons = () => {
   const [user, setUser] = useState(null);
   const [editMode, setEditMode] = useState(null)

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./WorkoutPlan.css";
-import WorkoutList from "./WorkoutList";
+import WorkoutList from "../WorkoutList/WorkoutList";
+
 const WorkoutPlan = () => {
   const [exerciseName, setExerciseName] = useState("");
   const [exerciseSearchResults, setExerciseSearchResults] = useState([]);
