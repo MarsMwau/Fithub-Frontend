@@ -1,12 +1,12 @@
 .Calories-Form {
   background-color: rgb(0, 0, 0);
-  color: #EC550E;
+  color: #ec550e;
   margin-left: 290px;
   height: 100vh;
   margin-top: 30px;
 }
 .Calories-Form h2 {
-  color: #EC550E;
+  color: #ec550e;
   font-size: 30px;
   font-weight: 700;
 }
@@ -18,27 +18,27 @@
 .Calories-Form .search input[type="text"] {
   width: 800px;
   padding: 10px;
-  border: 1px solid #AF3801;
+  border: 1px solid #af3801;
   border-radius: 20px;
   box-shadow: 0 0 10px rgba(212, 45, 3, 0.945);
 }
 .Calories-Form .search button {
   background-color: #005050;
-border: none;
-color: #fff;
-cursor: pointer;
-padding: 10px 20px;
-border-radius: 20px;
-box-shadow: 0 0 10px rgb(223, 58, 7);
-position: absolute;
-top: 0;
-right: 0;
-transition: .9s ease;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(223, 58, 7);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.9s ease;
 }
 .Calories-Form .search button:hover {
   transform: scale(1.1);
-color: rgb(255, 255, 255);
-background-color: #008080;
+  color: rgb(255, 255, 255);
+  background-color: #008080;
 }
 .Calories-Form .search-results {
   margin-top: 20px;
@@ -58,7 +58,7 @@ background-color: #008080;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  background-color: #FFFFFF;;
+  background-color: #ffffff;
   border-radius: 5px;
   margin-bottom: 10px;
   color: rgb(0, 0, 0);
@@ -69,15 +69,15 @@ background-color: #008080;
   font-size: 16px;
 }
 .Calories-Form .search-results li button {
-  background-color: #2F0397;
+  background-color: #2f0397;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   cursor: pointer;
   padding: 8px 16px;
   border-radius: 5px;
-  transition: .3s ease;
+  transition: 0.3s ease;
 }
 .Calories-Form .search-results li button:hover {
-  background-color: #034E4E;
-  color: #FFFFFF;
+  background-color: #034e4e;
+  color: #ffffff;
 }

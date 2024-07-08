@@ -1,66 +1,249 @@
+/* Main styles */
 .signup {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 150vw;
-    background-image: url('https://images.pexels.com/photos/4753885/pexels-photo-4753885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/4753885/pexels-photo-4753885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.back-button {
+  position: relative;
+  top: 4%;
+  right: 40%;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.back-button svg {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.back-button svg:hover {
+  color: #b34f20;
+}
+
+.form-container .form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 550px;
+  height: auto;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.form-container .title {
+  font-size: 28px;
+  color: #a33400;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.form-container .title::before,
+.form-container .title::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #a33400;
+}
+
+.form-container .title::before {
+  width: 18px;
+  height: 18px;
+  background-color: #a33400;
+}
+
+.form-container .title::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.form-container .message,
+.form-container .signin {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.form-container .signin {
+  text-align: center;
+}
+
+.form-container .signin a {
+  color: #a33400;
+}
+
+.form-container .signin a:hover {
+  text-decoration: underline #d8450b;
+}
+
+.form-container .flex {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.form-container .form label {
+  position: relative;
+}
+
+.form-container .form label input[type="text"],
+.form-container .form label input[type="password"],
+.form-container .form label input[type="email"],
+.form-container .form label select,
+.form-container .form label input[type="number"] {
+  width: 100% !important;
+  padding: 10px 10px 20px 10px;
+  margin: 0 !important;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.84);
+  box-sizing: border-box;
+}
+
+.form-container .form .flex label {
+  width: 48%;
+}
+
+.form-container .form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  color: rgba(66, 65, 65, 0.856);
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.form-container .form label .input:placeholder-shown + span {
+  top: 15px;
+  font-size: 0.9em;
+}
+
+.form-container .form label .input:focus + span,
+.form label .input:valid + span {
+  top: 30px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.form-container .form label .input:valid + span {
+  color: #d8450b;
+}
+
+.form .submit {
+  border: none;
+  outline: none;
+  background-color: #a33400;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.form .submit:hover {
+  background-color: #d8450b;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.9);
+    opacity: 1;
   }
-  .signup__title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 32px;
+
+  to {
+    transform: scale(1.8);
+    opacity: 0;
   }
-  .signup__input-wrapper {
-    margin-bottom: 16px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .signup {
+    padding: 35px;
+    justify-content: normal;
   }
-  .signup__input {
+
+  .back-button {
+    top: -2%;
+    right: 49%;
+  }
+
+  .back-button svg {
+    font-size: 2.5em;
+  }
+
+  .form-container .form {
     width: 100%;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 20px;
+    border-radius: 10px;
   }
-  .signup__error {
-    font-size: 0.8rem;
-    color: red;
-    margin-top: 0.2rem;
-    display: block;
+
+  .form-container .title {
+    font-size: 24px;
+    padding-left: 20px;
   }
-  .signup__input-wrapper-double {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 16px;
+
+  .form-container .form label input[type="text"],
+  .form-container .form label input[type="password"],
+  .form-container .form label input[type="email"],
+  .form-container .form label select,
+  .form-container .form label input[type="number"] {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
   }
-  .signup__input-wrapper-double .signup__input--small {
-    width: 90%;
-    padding: 12px;
-    border-radius: 8px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .form .submit {
+    font-size: 16px;
+    padding: 10px;
   }
-  .signup__button {
-    display: block;
-    width: 100%;
-    padding: 12px;
-    background-color: #CF6C29;
-    color: #FFFFFF;
-    border-radius: 8px;
-    border: none;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    cursor: pointer;
+
+  .form-container .message,
+  .form-container .signin {
+    font-size: 0.9em;
   }
-  .signup__button:hover {
-    background-color: #B34B0F;
+
+  .form-container .form label .input + span {
+    left: 10px;
+    top: 19px;
+    font-size: 0.9em;
   }
-  .signup__login-link {
-    font-size: 20px;
+
+  .form-container .form label .input:placeholder-shown + span {
+    top: 14px;
+    font-size: 0.7em;
   }
-  .signup__login-link-text {
-    color: #5DACF1;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
+
+  .form-container .form label .input:focus + span,
+.form label .input:valid + span {
+  top: 25px;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+}

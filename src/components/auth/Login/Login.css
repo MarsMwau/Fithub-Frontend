@@ -1,65 +1,186 @@
+/* Main styles */
 .login-page {
-    padding: 8% 0 0;
-    margin: auto;
-    color:#ffffff;
-    height: 85vh;
-    width: 150vw;
-    background-image: url('https://images.pexels.com/photos/4753885/pexels-photo-4753885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-repeat: no-repeat;
-    background-size: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("https://images.pexels.com/photos/4753885/pexels-photo-4753885.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.login-page .back-button {
+  position: relative;
+  top: 1%;
+  right: 40%;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.login-page .back-button svg {
+  font-size: 3em;
+  font-weight: 900;
+}
+
+.login-page .back-button svg:hover {
+  color: #b34f20;
+}
+
+.login-page h2 {
+  font-size: 28px;
+  color: #a33400;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.login-page h2::before,
+.login-page h2::after {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: #a33400;
+}
+
+.login-page h2::before {
+  width: 18px;
+  height: 18px;
+  background-color: #a33400;
+}
+
+.login-page h2::after {
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
+}
+
+.login-page p {
+  color: #ffffff;
+  font-size: 1em;
+}
+
+.form {
+  position: relative;
+  z-index: 1;
+  background: #000000;
+  width: 450px;
+  height: 400px;
+  margin: 0 auto 100px;
+  border-radius: 20px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #e2e8e9;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-bottom: 35px;
+}
+
+.form button[type="submit"] {
+  margin-top: 20px;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #a33400;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px;
+  color: #ffffff;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+}
+
+.form button[type="submit"]:hover,
+.form button[type="submit"]:active,
+.form button[type="submit"]:focus {
+  background-color: #d8450b;
+}
+
+.form .signup-login {
+  font-size: 1em;
+  margin: 1rem 0;
+}
+
+.form .signup-login-link {
+  color: #a33400;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.form .signup-login-link:hover {
+  text-decoration: underline #d8450b;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .login-page {
+    padding: 35px;
+    justify-content: normal;
   }
+
+  .login-page .back-button {
+    top: -2%;
+    right: 49%;
+  }
+
   .login-page h2 {
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 50px;
+    font-size: 24px;
+    padding-left: 20px;
   }
+
+  .login-page .back-button svg {
+    font-size: 2.5em;
+  }
+
   .form {
-    position: relative;
-    z-index: 1;
-    background: #000000;
-    max-width: 460px;
-    height: 400px;
-    margin: 0 auto 100px;
-    padding: 45px;
-    text-align: center;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
   }
+
   .form input[type="text"],
   .form input[type="password"] {
-    font-family: "Roboto", sans-serif;
-    outline: 0;
-    background: #E2E8E9;
-    width: 100%;
-    border: 0;
-    margin: 0 0 15px;
-    padding: 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-    margin-bottom: 35px;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
   }
+
   .form button[type="submit"] {
-    margin-top: 20px;
-    font-family: "Roboto", sans-serif;
-    text-transform: uppercase;
-    outline: 0;
-    background: #A33400;
-    width: 100%;
-    border: 0;
-    padding: 15px;
-    color: #FFFFFF;
-    font-size: 14px;
-    -webkit-transition: all 0.3 ease;
-            transition: all 0.3 ease;
+    font-size: 16px;
+    padding: 10px;
   }
-  .form button[type="submit"]:hover,.form button[type="submit"]:active,.form button[type="submit"]:focus {
-      background-color: #D8450B;
+
+  .form .signup-login {
+    font-size: 0.9em;
   }
-  .form .message {
-      margin: 15px 0px;
-      color: #000000;
-      font-size:12px;
-  }
-  .form .message a {
-      color:#1b4985;
-      text-decoration:none;
-  }
+}
